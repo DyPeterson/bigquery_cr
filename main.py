@@ -1,7 +1,8 @@
 import pandas as pd
+import numpy as np
 
 netflix_filepath = './data/netflix_titles.csv'
-netflix_df = pd.read_csv(netflix_filepath, header=0, index_col='show_id')
+netflix_df = pd.read_csv(netflix_filepath, header=0, index_col='title')
 
 def csv_to_dataframe(filepath:str, index:str) -> None:
     """
@@ -27,8 +28,21 @@ def dupllicate_drop(dataframe):
     """
     dataframe.drop_duplicates(subset=['title'], inplace=True)
 
+def drop_missing_row(dataframe) -> None:
+    """
+    placeholder
+    """
+    dataframe.dropna(subset=['type','title'], inplace=True)
+    
+def drop_extra_columns(dataframe):
+    """
+    placeholder
+    """
+    dataframe.drop(dataframe.columns[])
+    
 def write_csv(dataframe):
     """
     placeholder
     """
-    dataframe.to_csv()
+    new_file='./data/clean_netflix.csv'
+    dataframe.to_csv(new_file,)
