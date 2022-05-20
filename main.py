@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 netflix_filepath = './data/netflix_titles.csv'
 netflix_df = pd.read_csv(netflix_filepath, header=0, sep=',').replace('\n','', regex=True)
@@ -82,4 +81,5 @@ def run(dataframe):
     index_setter(dataframe,'title')
     drop_extra_columns(dataframe)
     write_csv(dataframe)
+    
 run(netflix_df)
