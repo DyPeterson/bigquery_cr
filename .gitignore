@@ -1,5 +1,4 @@
 # Cutom settings
-data/
 *.csv
 *.ipynb
 
