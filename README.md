@@ -81,9 +81,8 @@ A [Data Stack Academy](https://www.datastack.academy/) code review project to lo
 #### Link to project on GitHub:
 [GitHub Repository](https://github.com/DyPeterson/bigquery_cr)
 #### Links to Dataset:
-[Google Cloud Storage](https://storage.googleapis.com/netflix_titles_dpeterson/netflix_titles.csv)
-[Google Cloud Storage gsutil](gs://netflix_titles_dpeterson/netflix_titles.csv)
-[kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows)
+- [Google Cloud Storage](https://storage.googleapis.com/netflix_titles_dpeterson/netflix_titles.csv)
+- [kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows)
 
 ### Details
 
